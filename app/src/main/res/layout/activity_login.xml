@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_Vguide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_Vguide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_Hguide10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_Hguide90"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_olvidar_password"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="olvidaste la contraseña?"
+        app:layout_constraintBottom_toTopOf="@id/login_Hguide90"
+        app:layout_constraintEnd_toStartOf="@id/login_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/login_Vguide10" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_registro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="registrate"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_baseline_person_add_alt_24"
+        app:layout_constraintBottom_toTopOf="@id/btn_olvidar_password"
+        app:layout_constraintEnd_toStartOf="@id/login_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/login_Vguide10"
+        app:strokeColor="@color/color_secondary"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="entrar"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_baseline_login_24"
+        app:layout_constraintBottom_toTopOf="@id/btn_registro"
+        app:layout_constraintEnd_toStartOf="@id/login_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/login_Vguide10"
+        app:strokeColor="@color/color_secondary"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_til_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textColorHint="@color/color_secondary"
+        app:boxStrokeColor="@color/color_secondary"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/color_secondary"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/color_secondary"
+        app:layout_constraintBottom_toTopOf="@id/btn_login"
+
+        app:layout_constraintEnd_toStartOf="@id/login_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/login_Vguide10">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_tie_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:text="123456"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_til_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+
+        android:textColorHint="@color/color_secondary"
+        app:boxStrokeColor="@color/color_secondary"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/color_secondary"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/color_secondary"
+        app:layout_constraintBottom_toTopOf="@id/login_til_password"
+        app:layout_constraintEnd_toStartOf="@id/login_Vguide90"
+
+        app:layout_constraintStart_toEndOf="@id/login_Vguide10">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_tie_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:text="nuniezsanmiguel@hotmail.com"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/images"
+        app:civ_border_color="@color/color_secondary"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toTopOf="@id/login_til_email"
+        app:layout_constraintEnd_toStartOf="@id/login_Vguide90"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/login_Vguide10"
+        app:layout_constraintTop_toTopOf="@id/login_Hguide10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="97dp"
+        android:layout_height="29dp"
+        android:text="PACHANGAS"
+        android:textColor="@color/color_surface"
+        android:textColorLink="#FFFFFF"
+        android:textDirection="firstStrongLtr"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+        app:layout_constraintEnd_toStartOf="@+id/login_Vguide90"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/login_Vguide10"
+        app:layout_constraintTop_toTopOf="@+id/login_Hguide10"
+        app:layout_constraintVertical_bias="0.932" />
+
+    <include
+        android:id="@+id/login_progress_bar"
+        layout="@layout/my_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

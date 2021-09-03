@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "134240431062",
+    "project_id": "pachangas-9737a",
+    "storage_bucket": "pachangas-9737a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134240431062:android:d7f78ec52bdfe5d06d5277",
+        "android_client_info": {
+          "package_name": "com.txus.pachangas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134240431062-tddhl9n6upo0h3nfchlgps2q6f4efb0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCkk0IBa1V6LVA_MFPB-1BfhsIOU9POz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134240431062-tddhl9n6upo0h3nfchlgps2q6f4efb0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
